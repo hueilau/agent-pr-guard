@@ -1,6 +1,9 @@
 name: "Agent PR Guard"
 description: "Scan pull request diffs for AI-era supply-chain and GitHub Actions risk."
 author: "agent-pr-guard contributors"
+branding:
+  icon: "shield"
+  color: "green"
 inputs:
   base:
     description: "Base git ref to compare from."
