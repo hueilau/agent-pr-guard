@@ -1,0 +1,42 @@
+{
+  "name": "agent-pr-guard",
+  "version": "0.1.0",
+  "description": "A dependency-free PR risk scanner for AI-assisted repositories and GitHub Actions changes.",
+  "type": "module",
+  "bin": {
+    "agent-pr-guard": "./bin/agent-pr-guard.js"
+  },
+  "scripts": {
+    "scan": "node ./bin/agent-pr-guard.js scan",
+    "test": "node --test",
+    "lint": "node --check ./bin/agent-pr-guard.js && node --check ./src/*.js && node --check ./test/*.js"
+  },
+  "keywords": [
+    "github-actions",
+    "security",
+    "pull-request",
+    "ai",
+    "supply-chain",
+    "devsecops"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hueilau/agent-pr-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hueilau/agent-pr-guard/issues"
+  },
+  "homepage": "https://github.com/hueilau/agent-pr-guard#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin",
+    "src",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ]
+}

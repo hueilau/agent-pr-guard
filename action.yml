@@ -1,0 +1,23 @@
+name: "Agent PR Guard"
+description: "Scan pull request diffs for AI-era supply-chain and GitHub Actions risk."
+author: "agent-pr-guard contributors"
+inputs:
+  base:
+    description: "Base git ref to compare from."
+    required: false
+    default: "origin/main"
+  head:
+    description: "Head git ref to compare to."
+    required: false
+    default: "HEAD"
+  fail-on:
+    description: "Minimum severity that fails the action: low, medium, high, critical, or off."
+    required: false
+    default: "high"
+  format:
+    description: "Report format: text, markdown, or json."
+    required: false
+    default: "text"
+runs:
+  using: "node20"
+  main: "bin/agent-pr-guard.js"
